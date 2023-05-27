@@ -1,0 +1,48 @@
+<section id="login" class="">
+    <div class="d-flex justify-content-center align-items-center" style="height: 550px;">
+        <div class="col-md-6 col-lg-5 col-xl-3 ">
+            <div class="px-4 pb-4 rounded bg-light shadow">
+                <h5 class="py-2 text-center fw-lighter fs-6">Por favor ingresa a tu cuenta</h5>
+                <form novalidate>
+                    <div class="row g-2">
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInputUser"
+                                    placeholder="name@example.com">
+                                <label for="floatingInputUser">Correo electrónico</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingInputPasssword"
+                                    placeholder="Ingrese contraeña">
+                                <label for="floatingInputPassword">Ingresa tu contraseña</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        <input type="button" class="w-100 btn btn-success" value="Ingresar" (click)="ingresar()">
+                    </div>
+                </form>
+
+                <div class="w-100 mt-3" style="height: 1.5px; background-color: rgb(181, 179, 179);"></div>
+                <div class="mt-2">
+                    <p class="fw-lighter" style="font-size: 14.5px;">
+                        Si no tienes cuenta
+                        <a href="#" class="text-primary text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Registrate
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <div style="height: 300px;"></div> -->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <app-register></app-register>
+</div>

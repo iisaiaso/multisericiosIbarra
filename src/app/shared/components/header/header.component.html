@@ -1,0 +1,133 @@
+<nav class="navbar navbar-expand-lg sticky-top bg-light">
+    <div class="container">
+        <a class="navbar-brand" [routerLink]="['/']">
+            <img src="./assets/img/logo-1.png" alt="Multiservicios Ibarra">
+        </a>
+        <!-- Inicio de los elementos hasta md-->
+        <div class="d-flex d-lg-none">
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <!-- Icon -->
+                <a class="text-reset me-2" href="#" style="font-size: 22px;">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+
+                <!-- Avatar -->
+                <div class="dropdown pointer me-1">
+                    <a class="d-flex align-items-center hidden-arrow" id="navbarDropdownAvatar"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+
+                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25"
+                            loading="lazy" />
+
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAvatar">
+                        <li>
+                            <a class="dropdown-item" href="#">Hola Isaias Ibarra</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Confirguración</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Cerrar sesion</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown pointer">
+                    <a class="d-flex align-items-center hidden-arrow" id="navbarDropdownUser" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="https://w7.pngwing.com/pngs/831/88/png-transparent-user-profile-computer-icons-user-interface-mystique-miscellaneous-user-interface-design-smile-thumbnail.png"
+                            class="rounded-circle" height="27" loading="lazy" />
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAvatar">
+                        <li>
+                            <a class="dropdown-item" [routerLink]="['/login']">Identificate</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Registrate</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Iniciar sesion -->
+                <!-- <div class="dropdown">
+                    cerrar session
+                </div> -->
+
+                <!-- Fin iniciar sesion -->
+            </div>
+            <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+        </div>
+        <!-- Fin de los elementos-->
+
+        <div class="d-none d-lg-block d-xl-block sizing"></div>
+
+        <!-- Menu de opciones -->
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/']">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/servicio']">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/']">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/']">Nosotros</a>
+                </li>
+            </ul>
+            <div class="d-none d-lg-block">
+                <!-- Right elements -->
+                <div class="d-flex align-items-center me-4">
+                    <!-- Icon -->
+                    <a class="text-reset me-3" href="#" style="font-size: 23px;">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <!-- Avatar -->
+                    <div class="dropdown pointer me-3">
+                        <a class="d-flex align-items-center hidden-arrow" id="navbarDropdownAvatar"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+
+                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                                height="30" loading="lazy" />
+
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAvatar">
+                            <li>
+                                <a class="dropdown-item" href="#">Hola Isaias Ibarra</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Confirguración</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Cerrar sesion</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown pointer">
+                        <a class="d-flex align-items-center hidden-arrow" id="navbarDropdownUser"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://w7.pngwing.com/pngs/831/88/png-transparent-user-profile-computer-icons-user-interface-mystique-miscellaneous-user-interface-design-smile-thumbnail.png"
+                                class="rounded-circle" height="34" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAvatar">
+                            <li>
+                                <a class="dropdown-item" [routerLink]="['/login']">Identificate</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Registrate</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Fin de los elementos -->
+            </div>
+
+        </div>
+        <!-- Fin de menu de opciones -->
+    </div>
+</nav>
